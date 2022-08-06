@@ -5,4 +5,51 @@
 //  Created by Amby on 06/08/2022.
 //
 
-import Foundation
+import SwiftUI
+import Combine
+
+struct DependencyContainer: EnvironmentKey {
+    let useCases: UseCases
+
+    static var defaultValue: Self { self.default }
+
+    private static var `default`: Self = {
+        let client = HTTPClient(environs: .development)
+        let repositories = Repositories(
+            content: HomeCarouselRepository(network: client)
+        )
+
+        return Self (
+            useCases: UseCases(repositories: repositories)
+        )
+    }()
+
+    struct Repositories {
+        let content: HomeCarouselRepository
+    }
+
+    struct UseCases {
+        init(repositories: Repositories) {
+            self.repositories = repositories
+        }
+        private let repositories: Repositories
+
+        var homeCarouselUseCase: HomeCarouselUserCase {
+            HomeCarouselUserCase(homeCarouselRepository: repositories.content)
+        }
+    }
+}
+
+extension EnvironmentValues {
+    var dependencies: DependencyContainer {
+        get { self[DependencyContainer.self] }
+        set { self[DependencyContainer.self] = newValue }
+    }
+}
+
+extension View {
+    func inject(_ dependencies: DependencyContainer) -> some View {
+        return self
+            .environment(\.dependencies, dependencies)
+    }
+}

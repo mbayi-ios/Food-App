@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Carousel: Codable {
+    let index: Int
+    let imageUrl: String
+}
