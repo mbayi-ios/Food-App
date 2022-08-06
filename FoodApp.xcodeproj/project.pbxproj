@@ -12,6 +12,11 @@
 		89A83F99289E6E1D00624100 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F98289E6E1D00624100 /* LocationSelectView.swift */; };
 		89A83F9D289E6F3900624100 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F9C289E6F3900624100 /* SplashView.swift */; };
 		89A83F9F289E753D00624100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F9E289E753D00624100 /* AppDelegate.swift */; };
+		89A83FA2289E765A00624100 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA1289E765A00624100 /* StartView.swift */; };
+		89A83FA4289E7D8400624100 /* StartLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA3289E7D8400624100 /* StartLocationView.swift */; };
+		89A83FA6289E7F8200624100 /* StartNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA5289E7F8200624100 /* StartNotificationView.swift */; };
+		89A83FA8289E819100624100 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA7289E819100624100 /* LocationService.swift */; };
+		89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA9289E8FDA00624100 /* DependencyContainer.swift */; };
 		89C4B7B5289CF233008AD4A6 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */; };
 		89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7B6289CF233008AD4A6 /* ContentView.swift */; };
 		89C4B7B9289CF234008AD4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C4B7B8289CF234008AD4A6 /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		89A83F98289E6E1D00624100 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
 		89A83F9C289E6F3900624100 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		89A83F9E289E753D00624100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89A83FA1289E765A00624100 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		89A83FA3289E7D8400624100 /* StartLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLocationView.swift; sourceTree = "<group>"; };
+		89A83FA5289E7F8200624100 /* StartNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNotificationView.swift; sourceTree = "<group>"; };
+		89A83FA7289E819100624100 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		89A83FA9289E8FDA00624100 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		89C4B7B1289CF233008AD4A6 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
 		89C4B7B6289CF233008AD4A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +110,8 @@
 				89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */,
 				89C4B7B6289CF233008AD4A6 /* ContentView.swift */,
 				89A83F9E289E753D00624100 /* AppDelegate.swift */,
+				89A83FA7289E819100624100 /* LocationService.swift */,
+				89A83FA9289E8FDA00624100 /* DependencyContainer.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -110,6 +122,16 @@
 				89A83F9C289E6F3900624100 /* SplashView.swift */,
 			);
 			name = Splash;
+			sourceTree = "<group>";
+		};
+		89A83FA0289E764900624100 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				89A83FA1289E765A00624100 /* StartView.swift */,
+				89A83FA3289E7D8400624100 /* StartLocationView.swift */,
+				89A83FA5289E7F8200624100 /* StartNotificationView.swift */,
+			);
+			name = Walkthrough;
 			sourceTree = "<group>";
 		};
 		89C4B7A8289CF233008AD4A6 = {
@@ -162,6 +184,7 @@
 		89C4B7C3289CF2AE008AD4A6 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				89A83FA0289E764900624100 /* Walkthrough */,
 				89A83F9B289E6F2B00624100 /* Splash */,
 				89A83F9A289E6EC900624100 /* System */,
 				89A83F97289E6E0A00624100 /* LocationSelect */,
@@ -287,18 +310,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */,
 				89A83F9F289E753D00624100 /* AppDelegate.swift in Sources */,
+				89A83FA2289E765A00624100 /* StartView.swift in Sources */,
 				89C4B7E1289D2BEB008AD4A6 /* FormField.swift in Sources */,
 				89C4B7C5289CF32A008AD4A6 /* Theme.swift in Sources */,
 				89C4B7CD289CF628008AD4A6 /* Colors.swift in Sources */,
 				89A83F99289E6E1D00624100 /* LocationSelectView.swift in Sources */,
 				89C4B7D7289D1A49008AD4A6 /* SegmentPicker.swift in Sources */,
 				89C4B7D3289D0758008AD4A6 /* PickerWheel.swift in Sources */,
+				89A83FA4289E7D8400624100 /* StartLocationView.swift in Sources */,
 				89C4B7D9289D1F9B008AD4A6 /* Footer.swift in Sources */,
 				89C4B7E3289D3673008AD4A6 /* PickerField.swift in Sources */,
 				89C4B7E7289D4ACC008AD4A6 /* PincodeField.swift in Sources */,
 				89C4B7CF289CFEB9008AD4A6 /* Icons.swift in Sources */,
 				89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */,
+				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89C4B7DD289D263A008AD4A6 /* WeightedLinear.swift in Sources */,
 				89C4B7D5289D0FBE008AD4A6 /* ButtonStyles.swift in Sources */,
 				89C4B7CB289CF45C008AD4A6 /* Typography.swift in Sources */,
@@ -311,6 +338,7 @@
 				89C4B7E5289D45E3008AD4A6 /* SecureFormField.swift in Sources */,
 				89C4B7EB289D595D008AD4A6 /* PartialSheet.swift in Sources */,
 				89C4B7E9289D5732008AD4A6 /* LoadingOverlay.swift in Sources */,
+				89A83FA6289E7F8200624100 /* StartNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
