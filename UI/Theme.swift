@@ -6,15 +6,27 @@
 //
 
 import SwiftUI
+import Foundation
 
-struct Theme: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Theme {
+    let colors: Colors
+    let typography: Typography = Typography()
+    let icons: Icons = Icons()
+}
+
+private struct ThemeKey: EnvironmentKey {
+    static let defaultValue = Theme(colors: Colors(with: Color("#3c4366")))
+}
+
+extension EnvironmentValues {
+    var theme: Theme {
+        get { self[ThemeKey.self] }
+        set { self[ThemeKey.self] = newValue }
     }
 }
 
-struct Theme_Previews: PreviewProvider {
-    static var previews: some View {
-        Theme()
+extension View {
+    func theme(_ theme: Theme) -> some View {
+        environment(\.theme, theme)
     }
 }

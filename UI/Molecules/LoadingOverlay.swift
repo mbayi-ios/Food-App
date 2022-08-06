@@ -7,14 +7,28 @@
 
 import SwiftUI
 
-struct LoadingOverlay: View {
+private struct LoadingOverlay<Content>: View where Content: View {
+    @Binding var isPresented: Bool
+    @ViewBuilder let content: () -> Content
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        content()
+            .overlay(isPresented ? overlay(): nil)
     }
+
+    func overlay() -> some View {
+        ZStack {
+            Color.black.opacity(0.4)
+            ProgressView()
+        }.ignoresSafeArea()
+    }
+
 }
 
-struct LoadingOverlay_Previews: PreviewProvider {
-    static var previews: some View {
-        LoadingOverlay()
+extension View {
+    func loadingOverlay(_ isPresented: Binding<Bool>) -> some View {
+        LoadingOverlay(isPresented: isPresented) {
+            self
+        }
     }
 }

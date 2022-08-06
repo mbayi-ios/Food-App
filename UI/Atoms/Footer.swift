@@ -7,14 +7,43 @@
 
 import SwiftUI
 
-struct Footer: View {
+extension View {
+    func footer<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        VStack {
+            self
+            Spacer()
+        }.safeAreaInset(edge: .bottom) {
+            Footer(content: content)
+        }
+
+    }
+}
+private struct Footer<Content: View> : View {
+    @Environment(\.theme) var theme
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    private let content: Content
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Divider().foregroundColor(theme.colors.borderSubdued)
+            content.padding(16)
+        }
     }
 }
 
 struct Footer_Previews: PreviewProvider {
     static var previews: some View {
-        Footer()
+        VStack {
+            Text("test\nTest")
+        }.footer {
+            Button {
+                print("test")
+            } label: {
+                Text("Footer Button")
+            }.primary()
+        }
     }
 }
