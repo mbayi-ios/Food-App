@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var orderingPresented = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HomeCarousel()
+            VStack {
+                Button(action: {
+                    orderingPresented = true
+                }, label: {
+                    Text("Start Order")
+                })
+                    .primary()
+                    .frame(width: 340)
+                    .padding(10)
+                    .fullScreenCover(isPresented: $orderingPresented){
+                        LocationSelectView()
+                    }
+            }
+            HomeLastOrder()
+        }
+        .clipped()
     }
 }
 

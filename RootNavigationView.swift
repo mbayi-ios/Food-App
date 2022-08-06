@@ -38,8 +38,9 @@ struct RootNavigationView: View {
                         tab = .home
                     }
                 TabItem(
-                    isSelected: tab == .home,
-                    title: "Order", icon: theme.icons.tabs.order){
+                    isSelected: false,
+                    title: "Order",
+                    icon: theme.icons.tabs.order){
                         orderingPresented = true
                     }
                 TabItem(

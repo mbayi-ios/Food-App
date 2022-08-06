@@ -17,6 +17,13 @@
 		89A83FA6289E7F8200624100 /* StartNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA5289E7F8200624100 /* StartNotificationView.swift */; };
 		89A83FA8289E819100624100 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA7289E819100624100 /* LocationService.swift */; };
 		89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FA9289E8FDA00624100 /* DependencyContainer.swift */; };
+		89A83FAD289E9A1300624100 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FAC289E9A1300624100 /* PushNotificationService.swift */; };
+		89A83FAF289E9A2000624100 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FAE289E9A2000624100 /* NotificationType.swift */; };
+		89A83FB1289EAB7A00624100 /* HomeCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FB0289EAB7A00624100 /* HomeCarousel.swift */; };
+		89A83FB3289EAB8600624100 /* HomeLastOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FB2289EAB8600624100 /* HomeLastOrder.swift */; };
+		89A83FB6289EABB400624100 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FB5289EABB400624100 /* Carousel.swift */; };
+		89A83FB9289EABE400624100 /* GetHomeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FB8289EABE400624100 /* GetHomeContent.swift */; };
+		89A83FBB289EAC2700624100 /* HomeCarouselRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83FBA289EAC2700624100 /* HomeCarouselRepository.swift */; };
 		89C4B7B5289CF233008AD4A6 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */; };
 		89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7B6289CF233008AD4A6 /* ContentView.swift */; };
 		89C4B7B9289CF234008AD4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C4B7B8289CF234008AD4A6 /* Assets.xcassets */; };
@@ -52,6 +59,13 @@
 		89A83FA5289E7F8200624100 /* StartNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNotificationView.swift; sourceTree = "<group>"; };
 		89A83FA7289E819100624100 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		89A83FA9289E8FDA00624100 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		89A83FAC289E9A1300624100 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		89A83FAE289E9A2000624100 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		89A83FB0289EAB7A00624100 /* HomeCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarousel.swift; sourceTree = "<group>"; };
+		89A83FB2289EAB8600624100 /* HomeLastOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLastOrder.swift; sourceTree = "<group>"; };
+		89A83FB5289EABB400624100 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		89A83FB8289EABE400624100 /* GetHomeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeContent.swift; sourceTree = "<group>"; };
+		89A83FBA289EAC2700624100 /* HomeCarouselRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselRepository.swift; sourceTree = "<group>"; };
 		89C4B7B1289CF233008AD4A6 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
 		89C4B7B6289CF233008AD4A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				89A83F95289E6DE100624100 /* HomeView.swift */,
+				89A83FB0289EAB7A00624100 /* HomeCarousel.swift */,
+				89A83FB2289EAB8600624100 /* HomeLastOrder.swift */,
+				89A83FBA289EAC2700624100 /* HomeCarouselRepository.swift */,
+				89A83FB8289EABE400624100 /* GetHomeContent.swift */,
+				89A83FB7289EABBB00624100 /* UseCases */,
+				89A83FB4289EABA000624100 /* Models */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -107,6 +127,7 @@
 		89A83F9A289E6EC900624100 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				89A83FAB289E99FF00624100 /* Notifications */,
 				89C4B7B4289CF233008AD4A6 /* FoodAppApp.swift */,
 				89C4B7B6289CF233008AD4A6 /* ContentView.swift */,
 				89A83F9E289E753D00624100 /* AppDelegate.swift */,
@@ -132,6 +153,30 @@
 				89A83FA5289E7F8200624100 /* StartNotificationView.swift */,
 			);
 			name = Walkthrough;
+			sourceTree = "<group>";
+		};
+		89A83FAB289E99FF00624100 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				89A83FAC289E9A1300624100 /* PushNotificationService.swift */,
+				89A83FAE289E9A2000624100 /* NotificationType.swift */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+		89A83FB4289EABA000624100 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89A83FB5289EABB400624100 /* Carousel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		89A83FB7289EABBB00624100 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UseCases;
 			sourceTree = "<group>";
 		};
 		89C4B7A8289CF233008AD4A6 = {
@@ -184,12 +229,12 @@
 		89C4B7C3289CF2AE008AD4A6 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				89A83F92289E683F00624100 /* RootNavigationView.swift */,
 				89A83FA0289E764900624100 /* Walkthrough */,
 				89A83F9B289E6F2B00624100 /* Splash */,
 				89A83F9A289E6EC900624100 /* System */,
 				89A83F97289E6E0A00624100 /* LocationSelect */,
 				89A83F94289E6DCF00624100 /* Home */,
-				89A83F92289E683F00624100 /* RootNavigationView.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -311,15 +356,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */,
+				89A83FB6289EABB400624100 /* Carousel.swift in Sources */,
+				89A83FBB289EAC2700624100 /* HomeCarouselRepository.swift in Sources */,
 				89A83F9F289E753D00624100 /* AppDelegate.swift in Sources */,
 				89A83FA2289E765A00624100 /* StartView.swift in Sources */,
 				89C4B7E1289D2BEB008AD4A6 /* FormField.swift in Sources */,
 				89C4B7C5289CF32A008AD4A6 /* Theme.swift in Sources */,
 				89C4B7CD289CF628008AD4A6 /* Colors.swift in Sources */,
+				89A83FAD289E9A1300624100 /* PushNotificationService.swift in Sources */,
 				89A83F99289E6E1D00624100 /* LocationSelectView.swift in Sources */,
+				89A83FAF289E9A2000624100 /* NotificationType.swift in Sources */,
+				89A83FB3289EAB8600624100 /* HomeLastOrder.swift in Sources */,
 				89C4B7D7289D1A49008AD4A6 /* SegmentPicker.swift in Sources */,
 				89C4B7D3289D0758008AD4A6 /* PickerWheel.swift in Sources */,
 				89A83FA4289E7D8400624100 /* StartLocationView.swift in Sources */,
+				89A83FB9289EABE400624100 /* GetHomeContent.swift in Sources */,
 				89C4B7D9289D1F9B008AD4A6 /* Footer.swift in Sources */,
 				89C4B7E3289D3673008AD4A6 /* PickerField.swift in Sources */,
 				89C4B7E7289D4ACC008AD4A6 /* PincodeField.swift in Sources */,
@@ -328,6 +379,7 @@
 				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89C4B7DD289D263A008AD4A6 /* WeightedLinear.swift in Sources */,
 				89C4B7D5289D0FBE008AD4A6 /* ButtonStyles.swift in Sources */,
+				89A83FB1289EAB7A00624100 /* HomeCarousel.swift in Sources */,
 				89C4B7CB289CF45C008AD4A6 /* Typography.swift in Sources */,
 				89C4B7DB289D23F2008AD4A6 /* FooterFilled.swift in Sources */,
 				89A83F93289E683F00624100 /* RootNavigationView.swift in Sources */,

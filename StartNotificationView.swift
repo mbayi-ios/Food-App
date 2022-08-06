@@ -9,7 +9,10 @@ import SwiftUI
 
 struct StartNotificationView: View {
     @Environment(\.theme) var theme: Theme
-    
+
+    @AppStorage("didShowWalkthrough") var didShowWalkthrough: Bool?
+
+    private let pushNotificationManager: PushNotificationService = PushNotificationService.shared
 
     var body: some View {
         NavigationView {
@@ -37,7 +40,9 @@ struct StartNotificationView: View {
                             .foregroundColor(theme.colors.textOnPrimary)
 
                         Button("Continue") {
-
+                            self.performPushNotificationHandler {
+                                self.didShowWalkthrough = true
+                            }
                         }.subdued()
                             .frame(width: 135)
                             .offset(y: 15)
@@ -53,6 +58,11 @@ struct StartNotificationView: View {
             .background(Color("Brand", bundle: .main)).ignoresSafeArea()
         }
         .navigationBarBackButtonHidden(true)
+    }
+
+    private func performPushNotificationHandler(completion: @escaping () -> ()) {
+        pushNotificationManager.registerRemotePushNotifications()
+        completion()
     }
 }
 
