@@ -24,7 +24,7 @@ struct StartLocationView: View {
                         .multilineTextAlignment(.center)
                         .font(theme.typography.displayLarge)
 
-                    Text("Enable your location to order from\n nearby {Restaurant name} locations")
+                    Text("Enable your location to order from\n nearby \(filteredDisplayName()) locations")
                         .multilineTextAlignment(.center)
                         .font(theme.typography.body)
                         .lineSpacing(5)
@@ -72,7 +72,7 @@ extension StartLocationView  {
     }
 
     private func filteredDisplayName() -> String {
-        var filterName = Bundle.main.object(forInfoDictionaryKey: "CFBudneldisplayName") as? String ?? ""
+        var filterName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? ""
         let filterOut = " App"
 
         if let range = filterName.range(of: filterOut) {

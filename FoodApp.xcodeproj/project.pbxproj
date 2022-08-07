@@ -12,6 +12,12 @@
 		8921F625289EBC84005117F7 /* URL+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F624289EBC84005117F7 /* URL+StaticString.swift */; };
 		8921F627289EBD4E005117F7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F626289EBD4E005117F7 /* Request.swift */; };
 		8921F629289EBEC7005117F7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F628289EBEC7005117F7 /* HTTPClient.swift */; };
+		8921F62D289EF621005117F7 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F62C289EF621005117F7 /* CreateAccountView.swift */; };
+		8921F62F289F0447005117F7 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F62E289F0447005117F7 /* UserRepository.swift */; };
+		8921F632289F069E005117F7 /* PostSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F631289F069E005117F7 /* PostSignUp.swift */; };
+		8921F634289F0B4D005117F7 /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F633289F0B4D005117F7 /* SignUpUseCase.swift */; };
+		8921F636289F0DDF005117F7 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F635289F0DDF005117F7 /* SessionStore.swift */; };
+		8921F638289F0DEB005117F7 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F637289F0DEB005117F7 /* KeyStore.swift */; };
 		89A83F93289E683F00624100 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F92289E683F00624100 /* RootNavigationView.swift */; };
 		89A83F96289E6DE100624100 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F95289E6DE100624100 /* HomeView.swift */; };
 		89A83F99289E6E1D00624100 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A83F98289E6E1D00624100 /* LocationSelectView.swift */; };
@@ -59,6 +65,13 @@
 		8921F624289EBC84005117F7 /* URL+StaticString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+StaticString.swift"; sourceTree = "<group>"; };
 		8921F626289EBD4E005117F7 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		8921F628289EBEC7005117F7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		8921F62A289EF403005117F7 /* Client.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Client.xcconfig; sourceTree = "<group>"; };
+		8921F62C289EF621005117F7 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		8921F62E289F0447005117F7 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8921F631289F069E005117F7 /* PostSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSignUp.swift; sourceTree = "<group>"; };
+		8921F633289F0B4D005117F7 /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
+		8921F635289F0DDF005117F7 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		8921F637289F0DEB005117F7 /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
 		89A83F92289E683F00624100 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
 		89A83F95289E6DE100624100 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		89A83F98289E6E1D00624100 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
@@ -121,6 +134,27 @@
 				8921F628289EBEC7005117F7 /* HTTPClient.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		8921F62B289EF608005117F7 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				8921F630289F0684005117F7 /* UseCases */,
+				8921F62C289EF621005117F7 /* CreateAccountView.swift */,
+				8921F62E289F0447005117F7 /* UserRepository.swift */,
+				8921F631289F069E005117F7 /* PostSignUp.swift */,
+				8921F635289F0DDF005117F7 /* SessionStore.swift */,
+				8921F637289F0DEB005117F7 /* KeyStore.swift */,
+			);
+			name = Identity;
+			sourceTree = "<group>";
+		};
+		8921F630289F0684005117F7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				8921F633289F0B4D005117F7 /* SignUpUseCase.swift */,
+			);
+			name = UseCases;
 			sourceTree = "<group>";
 		};
 		89A83F94289E6DCF00624100 /* Home */ = {
@@ -251,6 +285,7 @@
 		89C4B7C3289CF2AE008AD4A6 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				8921F62B289EF608005117F7 /* Identity */,
 				8921F621289EBB47005117F7 /* Network */,
 				89A83F92289E683F00624100 /* RootNavigationView.swift */,
 				89A83FA0289E764900624100 /* Walkthrough */,
@@ -258,6 +293,7 @@
 				89A83F9A289E6EC900624100 /* System */,
 				89A83F97289E6E0A00624100 /* LocationSelect */,
 				89A83F94289E6DCF00624100 /* Home */,
+				8921F62A289EF403005117F7 /* Client.xcconfig */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -378,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8921F636289F0DDF005117F7 /* SessionStore.swift in Sources */,
 				89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */,
 				89A83FB6289EABB400624100 /* Carousel.swift in Sources */,
 				89A83FBB289EAC2700624100 /* HomeCarouselRepository.swift in Sources */,
@@ -386,6 +423,7 @@
 				89C4B7E1289D2BEB008AD4A6 /* FormField.swift in Sources */,
 				89C4B7C5289CF32A008AD4A6 /* Theme.swift in Sources */,
 				89C4B7CD289CF628008AD4A6 /* Colors.swift in Sources */,
+				8921F634289F0B4D005117F7 /* SignUpUseCase.swift in Sources */,
 				89A83FAD289E9A1300624100 /* PushNotificationService.swift in Sources */,
 				89A83F99289E6E1D00624100 /* LocationSelectView.swift in Sources */,
 				8921F620289EB9DD005117F7 /* HomeCarouselUserCase.swift in Sources */,
@@ -393,18 +431,22 @@
 				89A83FB3289EAB8600624100 /* HomeLastOrder.swift in Sources */,
 				89C4B7D7289D1A49008AD4A6 /* SegmentPicker.swift in Sources */,
 				89C4B7D3289D0758008AD4A6 /* PickerWheel.swift in Sources */,
+				8921F632289F069E005117F7 /* PostSignUp.swift in Sources */,
 				89A83FA4289E7D8400624100 /* StartLocationView.swift in Sources */,
 				8921F625289EBC84005117F7 /* URL+StaticString.swift in Sources */,
 				8921F627289EBD4E005117F7 /* Request.swift in Sources */,
 				89A83FB9289EABE400624100 /* GetHomeContent.swift in Sources */,
 				89C4B7D9289D1F9B008AD4A6 /* Footer.swift in Sources */,
+				8921F638289F0DEB005117F7 /* KeyStore.swift in Sources */,
 				89C4B7E3289D3673008AD4A6 /* PickerField.swift in Sources */,
 				89C4B7E7289D4ACC008AD4A6 /* PincodeField.swift in Sources */,
 				89C4B7CF289CFEB9008AD4A6 /* Icons.swift in Sources */,
 				89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */,
+				8921F62D289EF621005117F7 /* CreateAccountView.swift in Sources */,
 				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89C4B7DD289D263A008AD4A6 /* WeightedLinear.swift in Sources */,
 				89C4B7D5289D0FBE008AD4A6 /* ButtonStyles.swift in Sources */,
+				8921F62F289F0447005117F7 /* UserRepository.swift in Sources */,
 				89A83FB1289EAB7A00624100 /* HomeCarousel.swift in Sources */,
 				89C4B7CB289CF45C008AD4A6 /* Typography.swift in Sources */,
 				89C4B7DB289D23F2008AD4A6 /* FooterFilled.swift in Sources */,

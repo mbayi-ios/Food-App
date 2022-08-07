@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+extension  View {
+    public func partialSheet<Content: View>(isPresented: Binding<Bool>, title: String, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
+        ZStack {
+            self
+            PartialSheet(isPresented: isPresented, title: title, onDismiss: onDismiss) {
+                content()
+            }
+        }
+    }
+}
+
 struct PartialSheet<Content: View>: View {
 
     @Environment(\.theme) var theme: Theme

@@ -12,7 +12,7 @@ struct PincodeField: View {
     @Environment(\.theme) var theme: Theme
 
     let pinLimit: Int = 6
-    let canEdit: Bool = true
+    var canEdit: Bool = true
     @Binding var pinCode: String
 
     private var pins: [String] {

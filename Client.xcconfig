@@ -1,0 +1,11 @@
+//
+//  Client.xcconfig
+//  FoodApp
+//
+//  Created by Amby on 06/08/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BUNDLE_IDENTIFIER = mbayi.FoodApp
+BUNDLE_DISPLAY_NAME = Amby Food

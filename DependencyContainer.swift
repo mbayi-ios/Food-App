@@ -15,7 +15,9 @@ struct DependencyContainer: EnvironmentKey {
 
     private static var `default`: Self = {
         let client = HTTPClient(environs: .development)
+        //let sessionStore = SessionStore(keyStore: DefaultKeyStore())
         let repositories = Repositories(
+            user: UserRepository(network: client),
             content: HomeCarouselRepository(network: client)
         )
 
@@ -25,6 +27,7 @@ struct DependencyContainer: EnvironmentKey {
     }()
 
     struct Repositories {
+        let user: UserRepository
         let content: HomeCarouselRepository
     }
 
@@ -33,6 +36,10 @@ struct DependencyContainer: EnvironmentKey {
             self.repositories = repositories
         }
         private let repositories: Repositories
+
+        var signUpUseCase: SignUpUseCase {
+            SignUpUseCase(userRepository: repositories.user)
+        }
 
         var homeCarouselUseCase: HomeCarouselUserCase {
             HomeCarouselUserCase(homeCarouselRepository: repositories.content)
