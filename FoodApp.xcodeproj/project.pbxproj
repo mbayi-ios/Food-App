@@ -64,6 +64,11 @@
 		89C4B7E7289D4ACC008AD4A6 /* PincodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7E6289D4ACC008AD4A6 /* PincodeField.swift */; };
 		89C4B7E9289D5732008AD4A6 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7E8289D5732008AD4A6 /* LoadingOverlay.swift */; };
 		89C4B7EB289D595D008AD4A6 /* PartialSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4B7EA289D595D008AD4A6 /* PartialSheet.swift */; };
+		89D2AD4628A150D0009C3456 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AD4528A150D0009C3456 /* Address.swift */; };
+		89D2AD4828A150DB009C3456 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AD4728A150DB009C3456 /* Location.swift */; };
+		89D2AD4B28A162E6009C3456 /* LocationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AD4A28A162E6009C3456 /* LocationCardView.swift */; };
+		89D2AD4D28A16A0E009C3456 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AD4C28A16A0E009C3456 /* LocationDetailView.swift */; };
+		89D2AD4F28A16A1E009C3456 /* LocationDetailSegmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AD4E28A16A1E009C3456 /* LocationDetailSegmentPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +131,11 @@
 		89C4B7E6289D4ACC008AD4A6 /* PincodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincodeField.swift; sourceTree = "<group>"; };
 		89C4B7E8289D5732008AD4A6 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		89C4B7EA289D595D008AD4A6 /* PartialSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSheet.swift; sourceTree = "<group>"; };
+		89D2AD4528A150D0009C3456 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		89D2AD4728A150DB009C3456 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		89D2AD4A28A162E6009C3456 /* LocationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCardView.swift; sourceTree = "<group>"; };
+		89D2AD4C28A16A0E009C3456 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		89D2AD4E28A16A1E009C3456 /* LocationDetailSegmentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailSegmentPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,8 @@
 		897D011A28A12D3C00F1A93A /* LocationDetail */ = {
 			isa = PBXGroup;
 			children = (
+				89D2AD4C28A16A0E009C3456 /* LocationDetailView.swift */,
+				89D2AD4E28A16A1E009C3456 /* LocationDetailSegmentPicker.swift */,
 			);
 			name = LocationDetail;
 			sourceTree = "<group>";
@@ -215,6 +227,8 @@
 		89A83F97289E6E0A00624100 /* LocationSelect */ = {
 			isa = PBXGroup;
 			children = (
+				89D2AD4928A162D2009C3456 /* Views */,
+				89D2AD4428A150BF009C3456 /* Models */,
 				89A83F98289E6E1D00624100 /* LocationSelectView.swift */,
 			);
 			name = LocationSelect;
@@ -388,6 +402,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		89D2AD4428A150BF009C3456 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89D2AD4528A150D0009C3456 /* Address.swift */,
+				89D2AD4728A150DB009C3456 /* Location.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		89D2AD4928A162D2009C3456 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89D2AD4A28A162E6009C3456 /* LocationCardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,8 +499,10 @@
 				89A83F9F289E753D00624100 /* AppDelegate.swift in Sources */,
 				89A83FA2289E765A00624100 /* StartView.swift in Sources */,
 				89C4B7E1289D2BEB008AD4A6 /* FormField.swift in Sources */,
+				89D2AD4628A150D0009C3456 /* Address.swift in Sources */,
 				89C4B7C5289CF32A008AD4A6 /* Theme.swift in Sources */,
 				89C4B7CD289CF628008AD4A6 /* Colors.swift in Sources */,
+				89D2AD4F28A16A1E009C3456 /* LocationDetailSegmentPicker.swift in Sources */,
 				8921F634289F0B4D005117F7 /* SignUpUseCase.swift in Sources */,
 				897D012028A12DEF00F1A93A /* LocationPickupView.swift in Sources */,
 				89A83FAD289E9A1300624100 /* PushNotificationService.swift in Sources */,
@@ -488,10 +521,12 @@
 				89A83FB9289EABE400624100 /* GetHomeContent.swift in Sources */,
 				89C4B7D9289D1F9B008AD4A6 /* Footer.swift in Sources */,
 				8921F638289F0DEB005117F7 /* KeyStore.swift in Sources */,
+				89D2AD4D28A16A0E009C3456 /* LocationDetailView.swift in Sources */,
 				89C4B7E3289D3673008AD4A6 /* PickerField.swift in Sources */,
 				89C4B7E7289D4ACC008AD4A6 /* PincodeField.swift in Sources */,
 				89C4B7CF289CFEB9008AD4A6 /* Icons.swift in Sources */,
 				89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */,
+				89D2AD4828A150DB009C3456 /* Location.swift in Sources */,
 				8921F62D289EF621005117F7 /* CreateAccountView.swift in Sources */,
 				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89540162289FA459003E23EA /* SignInView.swift in Sources */,
@@ -512,6 +547,7 @@
 				89C4B7EB289D595D008AD4A6 /* PartialSheet.swift in Sources */,
 				89C4B7E9289D5732008AD4A6 /* LoadingOverlay.swift in Sources */,
 				8921F629289EBEC7005117F7 /* HTTPClient.swift in Sources */,
+				89D2AD4B28A162E6009C3456 /* LocationCardView.swift in Sources */,
 				89A83FA6289E7F8200624100 /* StartNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
