@@ -28,6 +28,10 @@ struct SegmentPicker: View {
                 makeSegmentButton(title: rightTitle, segment: .right)
             }
         }
+        .padding(3)
+        .background(theme.colors.actionSubdued)
+        .cornerRadius(.greatestFiniteMagnitude)
+        .padding(.horizontal, 15)
     }
     private func makeSegmentButton(title: String, segment: Segments) -> some View {
         Button {

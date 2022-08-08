@@ -21,7 +21,6 @@ struct LocationSelectView: View {
         NavigationView {
             VStack {
                 headerSection()
-                    .padding(16)
                 bodySection()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                 }
