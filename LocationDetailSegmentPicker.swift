@@ -62,7 +62,7 @@ struct LocationDetailSegmentPicker: View {
                     theme.colors.actionPrimary
                         .matchedGeometryEffect(id: "Tab", in: animation)
                         .offset(y: 22.5)
-                        .frame(width: .infinity, height: 5, alignment: .center)
+                        .frame(width: .infinity, height: 4, alignment: .center)
                 }
             }
         )
