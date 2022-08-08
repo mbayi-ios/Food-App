@@ -48,7 +48,7 @@ struct HomeCarousel: View {
                                     .clipped()
                             }
                         case .failure:
-                            Image("homePlaceholder")
+                            Image("HomePlaceholder")
 
                         @unknown default:
                             EmptyView()

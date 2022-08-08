@@ -46,6 +46,10 @@ struct DependencyContainer: EnvironmentKey {
             SignUpUseCase(userRepository: repositories.user)
         }
 
+        var signOutUseCase: SignOutUseCase {
+            SignOutUseCase(userRepository: repositories.user)
+        }
+
         var homeCarouselUseCase: HomeCarouselUserCase {
             HomeCarouselUserCase(homeCarouselRepository: repositories.content)
         }
