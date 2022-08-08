@@ -34,8 +34,6 @@ struct LocationSelectView: View {
             .partialSheet(isPresented: $isSheetPresented, title: scheduleTitle, content: {
                 schedulePickerSheet()
             })
-
-
         }
     }
 

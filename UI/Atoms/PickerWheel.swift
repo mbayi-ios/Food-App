@@ -35,12 +35,12 @@ struct PickerWheel: View {
                 selection = "\(leftSelection) \(rightSelection)"
             }
         )
-        GeometryReader{
-            geometry in
+        GeometryReader { geometry in
             HStack(spacing: 0) {
                 createPickerColumn(selection: firstBinding, column: leftcolumn, geometry: geometry)
                 createPickerColumn(selection: secondBinding, column: rightColumn, geometry: geometry)
             }
+            .pickerStyle(.wheel)
         }
     }
     private func createPickerColumn(selection: Binding<String>, column: [String], geometry: GeometryProxy) -> some View {
@@ -48,7 +48,7 @@ struct PickerWheel: View {
             ForEach(column, id: \.self) { item in
                 Text(item)
                     .tag(item)
-                    .font(theme.typography.displayLarge)
+                    .font(theme.typography.headingSmall)
             }
         }
         .frame(width: geometry.size.width/2, height: geometry.size.height, alignment: .center)
