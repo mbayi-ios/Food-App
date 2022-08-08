@@ -10,10 +10,28 @@ import Combine
 
 struct UserRepository {
     private let network: NetworkClient
-    //private let sessionStore: SessionStore
+    private let sessionStore: SessionStore
 
-    init(network: NetworkClient) {
+    init(
+        network: NetworkClient,
+        sessionStore: SessionStore) {
         self.network = network
+            self.sessionStore = sessionStore
+    }
+
+    func authenticate(email: String, password: String) -> AnyPublisher<Bool, Error> {
+        let request = PostSignIn(payload: PostSignIn.Payload(email: email, password: password))
+
+        return network.perform(request)
+            .receive(on: DispatchQueue.main)
+            .tryMap { response in
+                print("hello")
+                return true
+            }.eraseToAnyPublisher()
+    }
+
+    func signOut() {
+        sessionStore.clear()
     }
 
     func createAccount(firstName: String, lastName: String, emailAddress: String, phoneNumber: Int, password: String) ->AnyPublisher<Bool, Error> {

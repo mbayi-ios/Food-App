@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct LocationSelectView: View {
+    @State private var selectedSegment: Segments = .left
     var body: some View {
-        Text("Location View")
+        NavigationView {
+            VStack {
+                headerSection()
+                bodySection()
+            }
+        }
+    }
+
+    private func headerSection() -> some View {
+        SegmentPicker(leftTitle: "Pickup", rightTitle: "Delivery", selected: $selectedSegment)
+    }
+
+    private func bodySection() -> some View {
+        Group {
+            switch selectedSegment {
+            case .left:
+                //LocationPickupView()
+            case .right:
+                //LocationDeliveryView()
+            }
+        }
+    }
+
+    var scheduleTitle: String {
+        switch selectedSegment {
+        case .left:
+            return "Pickup Time"
+        case .right:
+            return "Delivery Time"
+        }
     }
 }
 

@@ -37,6 +37,10 @@ struct DependencyContainer: EnvironmentKey {
         }
         private let repositories: Repositories
 
+        var signInUseCase: SignInUseCase {
+            SignInUseCase(userRepository: repositories.user)
+        }
+
         var signUpUseCase: SignUpUseCase {
             SignUpUseCase(userRepository: repositories.user)
         }
