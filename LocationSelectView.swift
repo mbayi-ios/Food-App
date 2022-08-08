@@ -26,9 +26,9 @@ struct LocationSelectView: View {
         Group {
             switch selectedSegment {
             case .left:
-                //LocationPickupView()
+                LocationPickupView()
             case .right:
-                //LocationDeliveryView()
+                LocationDeliveryView()
             }
         }
     }

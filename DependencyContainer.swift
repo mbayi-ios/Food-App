@@ -15,9 +15,10 @@ struct DependencyContainer: EnvironmentKey {
 
     private static var `default`: Self = {
         let client = HTTPClient(environs: .development)
-        //let sessionStore = SessionStore(keyStore: DefaultKeyStore())
+        let sessionStore = SessionStore(keyStore: DefaultKeyStore())
+        let authStatus = AuthStatus(sessionStore: sessionStore)
         let repositories = Repositories(
-            user: UserRepository(network: client),
+            user: UserRepository(network: client, sessionStore: sessionStore),
             content: HomeCarouselRepository(network: client)
         )
 
