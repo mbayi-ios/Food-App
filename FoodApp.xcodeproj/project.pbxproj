@@ -18,6 +18,9 @@
 		8921F634289F0B4D005117F7 /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F633289F0B4D005117F7 /* SignUpUseCase.swift */; };
 		8921F636289F0DDF005117F7 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F635289F0DDF005117F7 /* SessionStore.swift */; };
 		8921F638289F0DEB005117F7 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921F637289F0DEB005117F7 /* KeyStore.swift */; };
+		893E3C7928A1C29000B0A560 /* DeliveryAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E3C7828A1C28F00B0A560 /* DeliveryAddressCell.swift */; };
+		893E3C7B28A1C2A300B0A560 /* SelectedDeliveryRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E3C7A28A1C2A300B0A560 /* SelectedDeliveryRestaurantCell.swift */; };
+		893E3C7D28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E3C7C28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift */; };
 		89540162289FA459003E23EA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89540161289FA459003E23EA /* SignInView.swift */; };
 		89540164289FA535003E23EA /* PostSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89540163289FA535003E23EA /* PostSignIn.swift */; };
 		89540166289FACA9003E23EA /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89540165289FACA9003E23EA /* SignInUseCase.swift */; };
@@ -84,6 +87,9 @@
 		8921F633289F0B4D005117F7 /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
 		8921F635289F0DDF005117F7 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		8921F637289F0DEB005117F7 /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+		893E3C7828A1C28F00B0A560 /* DeliveryAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAddressCell.swift; sourceTree = "<group>"; };
+		893E3C7A28A1C2A300B0A560 /* SelectedDeliveryRestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDeliveryRestaurantCell.swift; sourceTree = "<group>"; };
+		893E3C7C28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDeliveryLocationView.swift; sourceTree = "<group>"; };
 		89540161289FA459003E23EA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		89540163289FA535003E23EA /* PostSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSignIn.swift; sourceTree = "<group>"; };
 		89540165289FACA9003E23EA /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
@@ -185,6 +191,16 @@
 			name = UseCases;
 			sourceTree = "<group>";
 		};
+		893E3C7728A1C27B00B0A560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				893E3C7828A1C28F00B0A560 /* DeliveryAddressCell.swift */,
+				893E3C7A28A1C2A300B0A560 /* SelectedDeliveryRestaurantCell.swift */,
+				893E3C7C28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		897D011A28A12D3C00F1A93A /* LocationDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				897D011D28A12DD700F1A93A /* LocationDeliveryView.swift */,
+				893E3C7728A1C27B00B0A560 /* Views */,
 			);
 			name = LocationDelivery;
 			sourceTree = "<group>";
@@ -494,6 +511,7 @@
 				89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */,
 				89A83FB6289EABB400624100 /* Carousel.swift in Sources */,
 				897D011E28A12DD700F1A93A /* LocationDeliveryView.swift in Sources */,
+				893E3C7B28A1C2A300B0A560 /* SelectedDeliveryRestaurantCell.swift in Sources */,
 				897D012228A12EB500F1A93A /* AuthStatus.swift in Sources */,
 				89A83FBB289EAC2700624100 /* HomeCarouselRepository.swift in Sources */,
 				89A83F9F289E753D00624100 /* AppDelegate.swift in Sources */,
@@ -528,6 +546,8 @@
 				89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */,
 				89D2AD4828A150DB009C3456 /* Location.swift in Sources */,
 				8921F62D289EF621005117F7 /* CreateAccountView.swift in Sources */,
+				893E3C7928A1C29000B0A560 /* DeliveryAddressCell.swift in Sources */,
+				893E3C7D28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift in Sources */,
 				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89540162289FA459003E23EA /* SignInView.swift in Sources */,
 				89C4B7DD289D263A008AD4A6 /* WeightedLinear.swift in Sources */,

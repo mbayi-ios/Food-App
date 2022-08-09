@@ -28,7 +28,7 @@ struct LocationDetailView: View {
             ZStack {
                 closeButton()
                     .padding()
-                    .frame(maxWidth: .infinity, maxHeight: 220, alignment: .leading)
+                    .frame(maxWidth: .infinity, maxHeight: 220, alignment: .topLeading)
             }.background(
                 Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
             )
