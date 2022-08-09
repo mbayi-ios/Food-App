@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dietary_nutFree</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LBX-2.0" transform="translate(-330.000000, -457.000000)" fill="#171717" fill-rule="nonzero">
+            <g id="dietary_icons" transform="translate(202.000000, 457.000000)">
+                <g id="dietary_nutFree" transform="translate(128.000000, 0.000000)">
+                    <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z M6.313,7.27273 L4.898,7.27273 L4.898,16 L6.479,16 L6.479,10.0554 L6.551,10.0554 L10.664,16 L12.07,16 L12.07,7.27273 L10.497,7.27273 L10.497,13.2216 L10.421,13.2216 L6.313,7.27273 Z M19.383,7.27273 L13.792,7.27273 L13.792,16 L15.373,16 L15.373,12.2926 L19,12.2926 L19,10.9673 L15.373,10.9673 L15.373,8.59801 L19.383,8.59801 L19.383,7.27273 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
