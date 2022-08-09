@@ -32,6 +32,16 @@
 		89750BF028A2BF3A00A55224 /* MenuCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BEF28A2BF3A00A55224 /* MenuCategoryView.swift */; };
 		89750BF328A2BF5400A55224 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BF228A2BF5400A55224 /* MenuItem.swift */; };
 		89750BF528A2BF6100A55224 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BF428A2BF6100A55224 /* Category.swift */; };
+		89750BF928A2F68000A55224 /* MockOrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BF828A2F68000A55224 /* MockOrderItem.swift */; };
+		89750BFB28A2F88300A55224 /* OrderConfirmationFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BFA28A2F88300A55224 /* OrderConfirmationFooterView.swift */; };
+		89750BFD28A2F9C000A55224 /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BFC28A2F9C000A55224 /* OrderConfirmationView.swift */; };
+		89750BFF28A2F9DB00A55224 /* OrderConfirmationBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750BFE28A2F9DB00A55224 /* OrderConfirmationBannerView.swift */; };
+		89750C0128A2F9E900A55224 /* OrderConfirmationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0028A2F9E900A55224 /* OrderConfirmationTimeView.swift */; };
+		89750C0328A2F9F800A55224 /* OrderConfirmationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0228A2F9F800A55224 /* OrderConfirmationMapView.swift */; };
+		89750C0528A2FA0700A55224 /* OrderConfirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0428A2FA0700A55224 /* OrderConfirmationListView.swift */; };
+		89750C0728A2FA1A00A55224 /* OrderConfirmationPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0628A2FA1A00A55224 /* OrderConfirmationPaymentView.swift */; };
+		89750C0928A2FA2C00A55224 /* OrderConfirmationPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0828A2FA2C00A55224 /* OrderConfirmationPriceView.swift */; };
+		89750C0B28A2FB2A00A55224 /* ExpandableOrderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89750C0A28A2FB2A00A55224 /* ExpandableOrderGroup.swift */; };
 		897D011E28A12DD700F1A93A /* LocationDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D011D28A12DD700F1A93A /* LocationDeliveryView.swift */; };
 		897D012028A12DEF00F1A93A /* LocationPickupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D011F28A12DEF00F1A93A /* LocationPickupView.swift */; };
 		897D012228A12EB500F1A93A /* AuthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D012128A12EB500F1A93A /* AuthStatus.swift */; };
@@ -109,6 +119,16 @@
 		89750BEF28A2BF3A00A55224 /* MenuCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategoryView.swift; sourceTree = "<group>"; };
 		89750BF228A2BF5400A55224 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		89750BF428A2BF6100A55224 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		89750BF828A2F68000A55224 /* MockOrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOrderItem.swift; sourceTree = "<group>"; };
+		89750BFA28A2F88300A55224 /* OrderConfirmationFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationFooterView.swift; sourceTree = "<group>"; };
+		89750BFC28A2F9C000A55224 /* OrderConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
+		89750BFE28A2F9DB00A55224 /* OrderConfirmationBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationBannerView.swift; sourceTree = "<group>"; };
+		89750C0028A2F9E900A55224 /* OrderConfirmationTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationTimeView.swift; sourceTree = "<group>"; };
+		89750C0228A2F9F800A55224 /* OrderConfirmationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationMapView.swift; sourceTree = "<group>"; };
+		89750C0428A2FA0700A55224 /* OrderConfirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationListView.swift; sourceTree = "<group>"; };
+		89750C0628A2FA1A00A55224 /* OrderConfirmationPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationPaymentView.swift; sourceTree = "<group>"; };
+		89750C0828A2FA2C00A55224 /* OrderConfirmationPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationPriceView.swift; sourceTree = "<group>"; };
+		89750C0A28A2FB2A00A55224 /* ExpandableOrderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableOrderGroup.swift; sourceTree = "<group>"; };
 		897D011D28A12DD700F1A93A /* LocationDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeliveryView.swift; sourceTree = "<group>"; };
 		897D011F28A12DEF00F1A93A /* LocationPickupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickupView.swift; sourceTree = "<group>"; };
 		897D012128A12EB500F1A93A /* AuthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStatus.swift; sourceTree = "<group>"; };
@@ -234,6 +254,16 @@
 		89750BE628A2BEDC00A55224 /* OrderConfirmation */ = {
 			isa = PBXGroup;
 			children = (
+				89750BFA28A2F88300A55224 /* OrderConfirmationFooterView.swift */,
+				89750BFC28A2F9C000A55224 /* OrderConfirmationView.swift */,
+				89750BFE28A2F9DB00A55224 /* OrderConfirmationBannerView.swift */,
+				89750C0028A2F9E900A55224 /* OrderConfirmationTimeView.swift */,
+				89750C0228A2F9F800A55224 /* OrderConfirmationMapView.swift */,
+				89750C0428A2FA0700A55224 /* OrderConfirmationListView.swift */,
+				89750C0628A2FA1A00A55224 /* OrderConfirmationPaymentView.swift */,
+				89750C0828A2FA2C00A55224 /* OrderConfirmationPriceView.swift */,
+				89750C0A28A2FB2A00A55224 /* ExpandableOrderGroup.swift */,
+				89750BF728A2F66000A55224 /* Models */,
 			);
 			name = OrderConfirmation;
 			sourceTree = "<group>";
@@ -243,6 +273,14 @@
 			children = (
 				89750BF228A2BF5400A55224 /* MenuItem.swift */,
 				89750BF428A2BF6100A55224 /* Category.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		89750BF728A2F66000A55224 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89750BF828A2F68000A55224 /* MockOrderItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -557,6 +595,7 @@
 			files = (
 				89750BF328A2BF5400A55224 /* MenuItem.swift in Sources */,
 				8921F636289F0DDF005117F7 /* SessionStore.swift in Sources */,
+				89750C0B28A2FB2A00A55224 /* ExpandableOrderGroup.swift in Sources */,
 				89A83FAA289E8FDA00624100 /* DependencyContainer.swift in Sources */,
 				89A83FB6289EABB400624100 /* Carousel.swift in Sources */,
 				897D011E28A12DD700F1A93A /* LocationDeliveryView.swift in Sources */,
@@ -580,8 +619,10 @@
 				89A83FB3289EAB8600624100 /* HomeLastOrder.swift in Sources */,
 				89C4B7D7289D1A49008AD4A6 /* SegmentPicker.swift in Sources */,
 				89750BE828A2BEF700A55224 /* MenuLocationBanner.swift in Sources */,
+				89750BF928A2F68000A55224 /* MockOrderItem.swift in Sources */,
 				89C4B7D3289D0758008AD4A6 /* PickerWheel.swift in Sources */,
 				8921F632289F069E005117F7 /* PostSignUp.swift in Sources */,
+				89750C0128A2F9E900A55224 /* OrderConfirmationTimeView.swift in Sources */,
 				89A83FA4289E7D8400624100 /* StartLocationView.swift in Sources */,
 				8921F625289EBC84005117F7 /* URL+StaticString.swift in Sources */,
 				89540164289FA535003E23EA /* PostSignIn.swift in Sources */,
@@ -596,13 +637,17 @@
 				89C4B7CF289CFEB9008AD4A6 /* Icons.swift in Sources */,
 				89C4B7B7289CF233008AD4A6 /* ContentView.swift in Sources */,
 				89D2AD4828A150DB009C3456 /* Location.swift in Sources */,
+				89750C0328A2F9F800A55224 /* OrderConfirmationMapView.swift in Sources */,
 				89750BF528A2BF6100A55224 /* Category.swift in Sources */,
 				8921F62D289EF621005117F7 /* CreateAccountView.swift in Sources */,
 				893E3C7928A1C29000B0A560 /* DeliveryAddressCell.swift in Sources */,
 				893E3C7D28A1C2B300B0A560 /* ChangeDeliveryLocationView.swift in Sources */,
+				89750C0528A2FA0700A55224 /* OrderConfirmationListView.swift in Sources */,
+				89750BFF28A2F9DB00A55224 /* OrderConfirmationBannerView.swift in Sources */,
 				89A83FA8289E819100624100 /* LocationService.swift in Sources */,
 				89540162289FA459003E23EA /* SignInView.swift in Sources */,
 				89C4B7DD289D263A008AD4A6 /* WeightedLinear.swift in Sources */,
+				89750BFB28A2F88300A55224 /* OrderConfirmationFooterView.swift in Sources */,
 				89C4B7D5289D0FBE008AD4A6 /* ButtonStyles.swift in Sources */,
 				8921F62F289F0447005117F7 /* UserRepository.swift in Sources */,
 				89A83FB1289EAB7A00624100 /* HomeCarousel.swift in Sources */,
@@ -617,14 +662,17 @@
 				8921F623289EBB5A005117F7 /* Environs.swift in Sources */,
 				89750BEC28A2BF1400A55224 /* MenuItemCell.swift in Sources */,
 				89C4B7B5289CF233008AD4A6 /* FoodAppApp.swift in Sources */,
+				89750BFD28A2F9C000A55224 /* OrderConfirmationView.swift in Sources */,
 				89C4B7DF289D2734008AD4A6 /* NavigationBarModifier.swift in Sources */,
 				89C4B7E5289D45E3008AD4A6 /* SecureFormField.swift in Sources */,
 				89C4B7EB289D595D008AD4A6 /* PartialSheet.swift in Sources */,
+				89750C0928A2FA2C00A55224 /* OrderConfirmationPriceView.swift in Sources */,
 				89750BF028A2BF3A00A55224 /* MenuCategoryView.swift in Sources */,
 				89C4B7E9289D5732008AD4A6 /* LoadingOverlay.swift in Sources */,
 				8921F629289EBEC7005117F7 /* HTTPClient.swift in Sources */,
 				89D2AD4B28A162E6009C3456 /* LocationCardView.swift in Sources */,
 				89A83FA6289E7F8200624100 /* StartNotificationView.swift in Sources */,
+				89750C0728A2FA1A00A55224 /* OrderConfirmationPaymentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
